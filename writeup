@@ -1,0 +1,23 @@
+<b>WRITE UP FOR FINAL ASSIGNMENT</b>
+<br><br>
+I designed a simple drawing application for young children to create shapes and drawings. I chose to create this because I could apply many of the skills learned in this class such as using Raphael to draw shapes and paths, inputting a sound, conditional statements, using CSS to edit style, using hue, saturation and colour to change the path and shapes’ colours. 
+<br><br>
+The outlook of this game is designed to be very kid-friendly, using simple English and incorporating many bright and lively colours complemented by large texts. Also, I used various media elements to make the game more interactive. For instance, an upbeat sound plays when the game starts. 
+<br><br>
+I started with the chat and drawing app we did in class, and combined elements from the Raphael elements classes we had. I got the idea of creating this game when I was looking at my young cousin drawing on paper. I figured it would be really fun and interactive if a kid could do this on the computer, while learning how to use the computer at the same time.
+<br><br>
+<b>Shapes Board</b>
+<br><br>
+Using radio buttons, the user can pick which shape he would like to draw. Using the slider, the user can adjust the size of the shapes before placing it on the board. The shapes, namely, circle, square, rectangle and oval, are created using Raphael objects. 
+<br><br>
+I wrote call back functions i.e. mouse click, to create the shape depending on which shape is chosen. I included a sound every time the child picks up a letter, to guide the kid better that he is placing a shape on the board. I got my sounds from http://freesound.org and I stored it as a function outside the conditional statements and ran it when the mouse was clicked.
+<br><br>
+Also, the user can creating a shapes drawing, connected by lines. This is done via a checkbox that the user can tick. Regardless of which shape is chosen, the shapes will all link together. This allows the user to create a whole different kind of drawing with endless possibilities, for instance, using circles to create dot drawings to represent star alignments. Another instance is creating rectangles to make a family tree.
+The colours of the shapes are picked at random using HSL values to generate a different colour every time a shape is created. This makes the Shapes Board very colourful and aesthetically pleasing. The user can clear the board using the button.
+<br><br>
+<b>Drawing Board</b>
+<br><br>
+The user can draw on the board using different colours that he can pick using the HSL sliders. This is definitely a fun activity for children to go all out and draw. I used Raphael’s path object to create the lines. The 3 mouse events set the mouse state, and carries out its functions accordingly to create the line. The user can clear the board using the button.
+<br><br>
+Lastly, I am happy and proud to say that I designed this game myself, with no help from external sources, except with awesome guidance of Prof Lonce. I wanted to put myself to the test to create something purely from what I have learnt throughout the course of 13 weeks, without help from computing seniors. 
+Looking back, I think that if the user could drag the shapes created, the application would be even more interactive.
