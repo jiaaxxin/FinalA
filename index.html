@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Chelsea+Market">
+        <article id="articlecolor"> <!-- For HSV values to work on the background of article, we give an id to it.-->
+
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">   
+        <!-- <script src="/socket.io/socket.io.js">
+        </script>
+        -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js">
+        </script>
+        <title>LET'S DRAW!</title>
+    </head>
+
+  <body>
+    <header> Welcome to the colourful world of shapes!
+    <br>
+    <img src="http://www.clker.com/cliparts/f/3/4/a/13175250661538974407cartoon_kids.png" style="height:210px;">
+    </header>
+    <div id='main'>
+
+        <div id="svgcanvasDiv"> 
+
+        <h1>Shapes Board!</h1>
+            <br>
+            <u>Pick a shape!</u><br>
+            <input type="radio" name="radiobutton" value="1" id="button1" checked /> Circle
+            <input type="radio" name="radiobutton" value="2" id="button2"/> Square
+            <input type="radio" name="radiobutton" value="3" id="button3"/> Rectangle
+            <input type="radio" name="radiobutton" value="4" id="button4"/> Oval <br><br>
+            Size > <input type="range"  id="size" min="0" max="1" step=".05" value="0.05">
+            <br>
+            Create drawing with shapes > <input type="checkbox" name="checkbox" id="line">
+            <br>
+            <input type="button" id="clearButton2" value="Clear Shapes">
+            <br><br>
+            Click on the board below & start creating!
+            
+            <div id="svgcanvas"></div>  
+
+        </div>
+
+
+        <aside>
+        <h1>Drawing Board!</h1>
+    
+        <div id="svgcanvasDiv"> 
+            <center><div id="svgcanvas2"></div></center>
+        <br>
+            <h1>Drawing Controls</h1>
+            <br>
+            <center>
+            Hue<br><input id="Hue" type="range" step="0.05" min="0" max="360" value="180"> <br>
+            Saturation<br><input id="Saturation" type="range" step="0.05" min="0" max="100" value="50"> <br>
+            Lightness<br><input id="Lightness" type="range" step="0.05" min="0" max="100" value="50"> <br><br>
+            <input id="clearButton" type="button" value="Clear Board"> 
+            </center>
+ 
+        </div>
+
+        </aside>
+
+    </div>
+    <footer>
+    Created by Jiaxin!
+    </footer>
+  </body>
+</html>
+

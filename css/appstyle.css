@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Alpha;
+    src: url('Alpha.ttf');
+  }
+
+@font-face {
+    font-family: Snaphand;
+    src: url('Snaphand.ttf');
+  }
+
+html, body {  /* Select and size the outermost elements so other elements can be set in % */
+	height:100%;
+	width:99%;
+  background-color: #fcd914;
+}
+
+
+body {
+   font: 30px Snaphand;
+   background-color: #fcd914;
+  }
+
+  #main {  /* select element with id="main" */ 
+   min-height: 70%;
+   max-height: 70%;
+   margin: 0px;
+   padding: 0px;
+   display:  flex;
+   flex-flow: row;
+   }
+ 
+  #main > article { /* select articles (if they are inside the element with id="main") */ 
+   margin: 4px;
+   padding: 5px;
+   border: 7px solid #FF7256;
+   border-radius: 10pt;
+   flex: 3 1 50%;
+   order: 2;
+   overflow: scroll;
+   }
+
+  #main > #svgcanvasDiv {
+   border: 10px solid #FF7256;
+   background: repeat;
+   border-radius: 10pt; 
+   flex: 3 1 50%;
+   order: 1;
+   overflow: scroll;
+   text-align: center;
+   }
+
+ #svgcanvas {
+    margin: auto;
+    border-style: white solid;
+    border-radius: 10pt; 
+    background-image: url(http://www.sjbaker.org/paper_and_pencil_games/graph_racers/squared_paper.gif);
+    height: 850px;
+    width: 100%;
+}
+
+ #svgcanvas2 {
+    border-style: solid;
+    border-width: 1px; 
+    background-color: #fcd914;
+    height: 500px;
+    width: 300px;
+}
+
+  
+  #main > aside {
+   margin: 4px;
+   padding: 5px;
+   border: 10px solid #FF7256;
+   border-radius: 10pt;
+   background: #fcd914;
+           flex: 1 6 20%;
+           order: 2;
+
+   }
+ 
+  header, footer {  /* select all header and footer elements */
+   display: block;
+   margin: 5px;
+   padding: 0px;
+   min-height: 10%;
+   border: 10px solid #FF7256;
+   border-radius: 20pt;
+   background: white;
+   font-family: Alpha;
+   font-size: 30pt;
+   background-color: #fcd914;
+   color: #2b966e;
+   text-align: center;
+   }
+
+  footer {    /* override these attributes just for the footer elements */
+   font-family: Snaphand;
+   font-size: 20pt;
+   text-align: center;
+   color: white;
+   line-height: 30pt;
+
+   }
+
+  h1 {  
+   font-family: Alpha;
+   font-size: 30pt;
+   color: #2b966e;
+   text-align: center;
+   line-height: 40px;
+   margin: 10px; 
+   }
+
+  /* Changes layout under these conditions : Too narrow to support three columns */
+  /* "at-rules" using the '@' sign is an "advanced" feature */ 
+  @media all and (max-width: 640px) {
+  
+   #main, #page {
+    flex-flow: column;
+    flex-direction: column;
+   }
+
+   #main > article, #main > aside {
+    /* Return them to document order */
+            order: 0;
+   }
+  
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  
+};
+
